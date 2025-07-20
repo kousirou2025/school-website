@@ -350,7 +350,7 @@ footer {
 header nav a {
   display: block;
   padding: 10px 0;
-  font-size: 0.9rem; 
+  font-size: clamp(0.8rem, 2vw, 1.1rem); /* 👈 ここを書き換え */
   white-space: nowrap;
- }
+  }
 }
