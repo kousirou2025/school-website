@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>コース紹介 | English Connect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="English Connect ロゴ" />
+      </a>
+    </div>
+    <nav>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul id="nav-links">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="courses.html" class="active">コース紹介</a></li>
+        <li><a href="classroom.html">教室案内</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main class="courses-page">
+    <section class="page-header">
+      <h1>コース紹介</h1>
+      <p>あなたの目的やレベルに合わせた英会話コースをご用意しています。</p>
+    </section>
+
+    <section class="course-text-box">
+      <h2>初級英会話</h2>
+      <p>
+        英語が初めての方や基礎からやり直したい方向けのコースです。<br>
+        アルファベットの発音や簡単なあいさつ、日常で使うフレーズなどを一から丁寧に学びます。
+        クラスは少人数制で、講師が一人ひとりのペースに合わせて進めるため、初心者でも安心です。<br>
+        英語を「学ぶ」だけでなく「使う」楽しさを実感できるレッスンが特徴です。
+      </p>
+    </section>
+
+    <section class="course-text-box">
+      <h2>中級英会話</h2>
+      <p>
+        簡単な会話はできるけど、より自然な英語表現を身につけたい方におすすめです。<br>
+        実際のシーンを想定したロールプレイやディスカッションを通して、英語で「考え」「伝える」力を伸ばします。
+        リスニング・スピーキングの両方を強化し、スムーズな会話ができるレベルを目指します。<br>
+        海外旅行や外国人との交流にも役立つ実践的な内容です。
+      </p>
+    </section>
+
+    <section class="course-text-box">
+      <h2>ビジネス英会話</h2>
+      <p>
+        ビジネスシーンで必要な英語力を身につけるためのコースです。<br>
+        プレゼンテーション、会議、電話・メール対応など、現場で使える実践的な英語表現を習得。
+        さらに、異文化理解やマナーについても学び、国際的な場でも自信を持って対応できる力を育てます。<br>
+        ビジネス経験豊富な講師によるフィードバックで、即戦力となる英語力を養います。
+      </p>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2025 English Connect. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // ハンバーガーメニュー開閉
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>

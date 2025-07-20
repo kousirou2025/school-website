@@ -130,11 +130,140 @@ footer {
   background: #333;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   font-size: 0.9rem;
 }
 
-/* レスポンシブ対応 */
+/* -----------------------------
+   コース紹介ページ（ガラス調）
+------------------------------ */
+.courses-page {
+  background: url("../images/courses-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 50px 20px;
+}
+
+.page-header {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.4); /* 半透明ホワイト */
+  backdrop-filter: blur(10px); /* ガラス風ぼかし */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px; /* 横長楕円 */
+  padding: 30px 50px;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.page-header h1 {
+  font-size: 2.8rem;
+  color: #004080;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  color: #004080;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.course-text-box {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-text-box h2 {
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.course-text-box p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* -----------------------------
+   教室案内ページ（事務的デザイン）
+------------------------------ */
+.classroom-page {
+  background: url("../images/classroom-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 50px 20px;
+  color: #333;
+}
+
+.page-header-strict {
+  background: rgba(255, 255, 255, 0.9); /* 半透明ホワイトに変更 */
+  color: #004080; /* 濃い青文字に変更 */
+  text-align: center;
+  padding: 30px 50px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.page-header-strict h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #004080; /* 青文字 */
+}
+
+.page-header-strict p {
+  font-size: 1.2rem;
+  color: #555; /* 説明文は落ち着いたグレー */
+}
+
+
+.classroom section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 20px 30px; /* ← 左右にゆとりを追加 */
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.classroom p,
+.classroom li,
+.classroom dd {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+  padding-left: 10px; /* ← テキスト左に少しインデント */
+}
+
+.classroom h2 {
+  font-size: 1.8rem;
+  color: #004080;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.classroom p,
+.classroom li {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.classroom img.map {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* レスポンシブ */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -176,4 +305,59 @@ footer {
   .course-item {
     width: 90%;
   }
+}
+
+/* -----------------------------
+   お問い合わせページ
+------------------------------ */
+.contact-page {
+  background: #f4f4f4;
+  padding: 50px 20px;
+}
+
+.contact-form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #004080;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #004080;
+  outline: none;
+}
+
+.btn-submit {
+  background: #004080;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #003366;
 }
