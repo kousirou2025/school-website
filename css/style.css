@@ -347,10 +347,15 @@ footer {
     text-align: center;
   }
 
-header nav a {
-  display: block;
-  padding: 10px 0;
-  font-size: clamp(0.8rem, 2vw, 1.1rem); /* 👈 ここを書き換え */
-  white-space: nowrap;
+  header nav a {
+    display: block;
+    padding: 10px 0;
+    font-size: 0.9rem; 
+    white-space: nowrap;
+  }
+
+  /* スマホ時の「お問い合わせ」見出しサイズ調整 */
+  .page-header-strict h1 {
+    font-size: 1.8rem;
   }
 }
