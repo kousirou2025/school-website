@@ -13,7 +13,8 @@
       <img src="images/logo.png" alt="English Connect ロゴ" />
     </div>
     <nav>
-      <ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul id="nav-links">
         <li><a href="index.html">ホーム</a></li>
         <li><a href="courses.html">コース紹介</a></li>
         <li><a href="classroom.html">教室案内</a></li>
@@ -52,5 +53,14 @@
   <footer>
     <p>&copy; 2025 English Connect. All rights reserved.</p>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
 </body>
 </html>
