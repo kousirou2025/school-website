@@ -145,15 +145,12 @@ footer {
 
 .page-header {
   text-align: center;
-  background: rgba(255, 255, 255, 0.4); /* 半透明ホワイト */
-  backdrop-filter: blur(10px); /* ガラス風ぼかし */
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50px; /* 横長楕円 */
+  background: #ffffff; /* シンプルな白色 */
+  border-radius: 10px; /* 丸みを少し小さく */
   padding: 30px 50px;
   max-width: 800px;
   margin: 0 auto 50px auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ソフトな影に調整 */
 }
 
 .page-header h1 {
