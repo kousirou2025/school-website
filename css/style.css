@@ -347,9 +347,9 @@ footer {
     text-align: center;
   }
 
-  header nav a {
-    display: block;
-    padding: 10px 0;
-    font-size: 1rem;
-  }
+header nav a {
+  display: block;
+  padding: 10px 0;
+  font-size: 0.9rem; 
+  white-space: nowrap;
 }
